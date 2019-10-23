@@ -1,4 +1,4 @@
-import CHANGE_MENU from './action-types'
+import { CHANGE_MENU } from './action-types'
 
 const initState = {
   menuName: ''
