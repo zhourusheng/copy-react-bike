@@ -1,14 +1,17 @@
 import React from 'react'
 import { Row, Col } from 'antd';
+import NavLeft from './NavLeft'
+
+import '../../style/common.scss'
 
 class Layout extends React.Component{
   render(){
     return (
-      <Row>
-        <Col span={4}>
-          left-menu
+      <Row className="container">
+        <Col span={4} className="nav-left">
+          <NavLeft />
         </Col>
-        <Col span={20}>
+        <Col span={20} className="main">
           {this.props.children}
         </Col>
       </Row>
