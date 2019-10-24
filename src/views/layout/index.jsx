@@ -1,6 +1,7 @@
 import React from 'react'
 import { Row, Col } from 'antd';
 import NavLeft from './NavLeft'
+import Header from './Header'
 
 import '../../style/common.scss'
 
@@ -12,7 +13,10 @@ class Layout extends React.Component{
           <NavLeft />
         </Col>
         <Col span={20} className="main">
-          {this.props.children}
+          <Header />
+          <Row className="content">
+            {this.props.children}
+          </Row>
         </Col>
       </Row>
     )
